@@ -1,0 +1,67 @@
+.figure {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+
+.circle {
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.square {
+    border-radius: 0;
+    border: 2px solid black;
+}
+
+.rectangle {
+    border-radius: 0;
+    width: 150px;
+    border: 2px solid black;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid black;
+}
+
+.gallery-item {
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+.gallery-item.large {
+    transform: scale(1.2);
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+.nav-menu li {
+    margin-right: 10px;
+}
+.nav-menu li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #ccc;
+    color: #000;
+    transition: background-color 0.3s ease-in-out;
+}
+.nav-menu li a:hover {
+    background-color: #aaa;
+}
+.nav-menu li a.active {
+    background-color: #f00;
+    color: #fff;
+}
